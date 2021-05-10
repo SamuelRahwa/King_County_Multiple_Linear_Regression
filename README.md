@@ -70,55 +70,52 @@ However, the Q-Q Plot shows the points falling along a straight line, which prov
 
 ## Conclusions
 
-1. Does various predicting factors which have been chosen initially really affect the home prices?
+**1. Does various predicting factors which have been chosen initially really affect the home prices?**
 
-- With 14 features we are able to explain about 60% of the variance in home prices in
-  house sales, from a northwestern county. This indicates that these factors truly are
-  explanatory. More analysis is required to understand how much additional explanatory
-  power would be provided by incorporating features with less multicollinearity.
+> With 14 features we are able to explain about 60% of the variance in home prices in house sales, from a northwestern county. This indicates that these factors truly are explanatory. More analysis is required to understand how much additional explanatory power would be provided by incorporating features with less multicollinearity.
 
 
-2. Which top factors might increase the estimated value of a home, for the buyer or the seller, and by what amount?
+**2. Which top factors might increase the estimated value of a home, for the buyer or the seller, and by what amount?**
 
 
-The three factors that would increase value of a home:
+> The three factors that would increase value of a home:
 
-*1. Square Foot Living
+>> 1. Square Foot Living
 
-*2. Square Foot Living 15
+>> 2. Square Foot Living 15
 
-*3. Grade
-
-
-3. Which top factors might decrease the estimated value of a home, for the buyer or the seller,
-and by what amount?
+>> 3. Grade
 
 
-The top three factors that would decrease value of a home:
+**3. Which top factors might decrease the estimated value of a home, for the buyer or the seller,
+and by what amount?**
 
-*1. Renovated
 
-*2. Waterfront
+>The top three factors that would decrease value of a home:
 
-*3. Square Foot Living 15
+>> 1. Renovated
+
+>> 2. Waterfront
+
+>> 3. Square Foot Living 15
 
 
 
 
 ***
-
-
 Questions to consider:
 
-* What would you recommend the business do as a result of this work?
-** We can advise homeowner's who are looking to sell for the highest price possible, to increase the square footage of their home, make sure the county gives you the highest grade rating possible (when they come to evaluate), and compare the square footage of your home against your nearest 15 neighbors.
+**What would you recommend the business do as a result of this work?**
 
-* What are some reasons why your analysis might not fully solve the business problem?
-** Multicollinearity was a problem because it undermines the statistical significance of an independent variable (Price). Other things being equal, the larger the standard error of a regression coefficient, the less likely it is that this coefficient will be statistically significant.
+> We can advise homeowner's who are looking to sell for the highest price possible, to increase the square footage of their home, make sure the county gives you the highest grade rating possible (when they come to evaluate), and compare the square footage of your home against your nearest 15 neighbors.
 
-* What else could you do in the future to improve this project?
-** The use of an expanded dataset with more home features or our various datasets included from the surrounding cites and counties
+**What are some reasons why your analysis might not fully solve the business problem?**
 
+> Multicollinearity was a problem because it undermines the statistical significance of an independent variable (Price). Other things being equal, the larger the standard error of a regression coefficient, the less likely it is that this coefficient will be statistically significant.
+
+**What else could you do in the future to improve this project?**
+
+> The use of an expanded dataset with more home features or our various datasets included from the surrounding cites and counties
 
 ***
 
