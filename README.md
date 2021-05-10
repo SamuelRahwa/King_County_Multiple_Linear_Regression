@@ -1,66 +1,131 @@
-# Phase 2 Project
+# Which factors influence a home’s sales price?
 
-Another module down--you're almost half way there!
+**Author**: Samuel Rahwa
+May 5, 2021
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-campus/master/halfway-there.gif)
+## Overview
 
-All that remains in Phase 2 is to put our newfound data science skills to use with a large project! This project should take 20 to 30 hours to complete.
+I have tasked to work for RE/MAX, a real estate agency that helps homeowners buy and/or sell homes. I need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
 
-## Project Overview
 
-For this project, you will use regression modeling to analyze house sales in a northwestern county.
+## Business Problem
 
-### The Data
+You can assert some control over the value of your home with diligent upkeep and selective home updates. At the same time, dozens of factors large and small impact the state of housing as a whole and how real estate performs on a local level. 
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+***
+Questions to consider:
+* Does various predicting factors which have been chosen initially really affect the home prices?
+* Which top factors might increase the estimated value of a home, for the buyer or the seller, and by what amount?
+* Which top factors might decrease the estimated value of a home, for the buyer or the seller, and by what amount?*
+***
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore some or all of the following features:
+## Data
 
-* date
-* view
-* sqft_above
-* sqft_basement
-* yr_renovated
-* zipcode
-* lat
-* long
-* sqft_living15
+This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder.
+
+From the King County House Sales dataset, I used the following features:
+
+* sqft_living
 * sqft_lot15
+* sqft_living15
+* bedrooms
+* bathrooms
+* floors
+* waterfront 
+* view
+* condition 
+* grade
+* age
+* year_sold
+* renovated
+* month_sold
 
-### Business Problem
+## Methods
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+* Data Exploration
+* Data Cleaning
+* Creating a subset dataframe to answer business questions
+** Logging continous variables
+** Scaling non-continous features
+* Using statsmodels to run our Mutilple Linear Regression
+** Checking the assumptions of our linear regression
+** Creating Visualizations to confirm if the mathetically tests are in line with the "eye test"
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
 
-## Deliverables
+## Results
 
-There are three deliverables for this project:
+Our final model had an r-squared of 0.597. This model did not violate the linearity assumption (p = 0.8494), but it did violate the normality (p < 0.001) and homoscedasticity (p < 0.001) assumptions. Based on the variance inflaction factor metric, it did not violate the independence assumption.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+However, the Q-Q Plot shows the points falling along a straight line, which provide strong evidence that these numbers truly did come from a normal distribution. Finally, the residual scatter plot appears to meet homoscedasticity assumption since the scores appear to be concentrated in the center (about the 0 point) and distributed in a rough rectangularly pattern.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+### Q-Q Plot
+![graph1](./images/viz1.png)
 
-### Key Points
 
-* **Your deliverables should explicitly address each step of the data science process.** Refer to [the Data Science Process lesson](https://github.com/learn-co-curriculum/dsc-data-science-processes) from Topic 19 for more information about process models you can use.
+### Residual Scatter Plot
+![graph2](./images/viz1.png)
 
-* **Your Jupyter Notebook should demonstrate an iterative approach to modeling.** This means that you begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs discussing your final model - this should include interpreting at least 3 important parameter estimates or statistics.
 
-* **Based on the results of your models, your notebook and presentation should discuss at least two features that have strong relationships with housing prices.**
+## Conclusions
 
-## Getting Started
+1. Does various predicting factors which have been chosen initially really affect the home prices?
 
-Start on this project by forking and cloning [this project repository](https://github.com/learn-co-curriculum/dsc-phase-2-project) to get a local copy of the dataset.
+- With 14 features we are able to explain about 60% of the variance in home prices in
+  house sales, from a northwestern county. This indicates that these factors truly are
+  explanatory. More analysis is required to understand how much additional explanatory
+  power would be provided by incorporating features with less multicollinearity.
+  
+  
+2. Which top factors might increase the estimated value of a home, for the buyer or the seller, and by what amount?
 
-We recommend structuring your project repository similar to the structure in [the Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template). You can do this either by creating a new fork of that repository to work in or by building a new repository from scratch that mimics that structure.
+***
+The three factors that would increase value of a home:
 
-## Project Submission and Review
+*1. Square Foot Living
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+*2. Square Foot Living 15
 
-## Summary
+*3. Grade
+***
+      
+3. Which top factors might decrease the estimated value of a home, for the buyer or the seller, 
+and by what amount?
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+***
+The top three factors that would decrease value of a home:
+
+*1. Renovated
+
+*2. Waterfront
+
+*3. Square Foot Living 15
+***
+
+***
+Questions to consider:
+
+* What would you recommend the business do as a result of this work?
+** We can advise homeowner's who are looking to sell for the highest price possible, to increase the square footage of their home, make sure the county gives you the highest grade rating possible (when they come to evaluate), and compare the square footage of your home against your nearest 15 neighbors. 
+
+* What are some reasons why your analysis might not fully solve the business problem?
+** Multicollinearity was a problem because it undermines the statistical significance of an independent variable(Price). Other things being equal, the larger the standard error of a regression coefficient, the less likely it is that this coefficient will be statistically significant.
+
+* What else could you do in the future to improve this project?
+** The use of an expanded dataset with more home features or our various datasets included from the surrounding cites and counties
+***
+
+## For More Information
+
+Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+
+For any additional questions, please contact **Samuel Rahwa at samuelaaronrahwa@gmail.com**
+
+## Repository Structure
+
+```
+├── README.md                                   <- The top-level README for reviewers of this project
+├── Multiple_Linear_Regression_.ipynb           <- Narrative documentation of analysis in Jupyter notebook
+├── Home_Pricing_Factors_Presentation.pdf       <- PDF version of project presentation
+├── data                                        <- Both sourced externally and generated from code
+└── images                                      <- Both sourced externally and generated from code
+```
