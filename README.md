@@ -128,9 +128,9 @@ For any additional questions, please contact **Samuel Rahwa at samuelaaronrahwa@
 ## Repository Structure
 
 ```
-├── README.md                                   <- The top-level README for reviewers of this project
-├── Multiple_Linear_Regression_.ipynb           <- Narrative documentation of analysis in Jupyter notebook
-├── Home_Pricing_Factors_Presentation.pdf       <- PDF version of project presentation
 ├── data                                        <- Both sourced externally and generated from code
-└── images                                      <- Both sourced externally and generated from code
+├── images                                      <- Both sourced externally and generated from code
+├── Home_Pricing_Factors_Presentation.pdf       <- PDF version of project presentation
+├── Multiple_Linear_Regression_.ipynb           <- Narrative documentation of analysis in Jupyter notebook
+└── README.md                                   <- The top-level README for reviewers of this project
 ```
