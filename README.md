@@ -2,6 +2,7 @@
 
 **Author**: Samuel Rahwa
 
+
 May 5, 2021
 
 ## Overview
@@ -79,7 +80,7 @@ However, the Q-Q Plot shows the points falling along a straight line, which prov
 
 2. Which top factors might increase the estimated value of a home, for the buyer or the seller, and by what amount?
 
-***
+
 The three factors that would increase value of a home:
 
 *1. Square Foot Living
@@ -87,12 +88,12 @@ The three factors that would increase value of a home:
 *2. Square Foot Living 15
 
 *3. Grade
-***
+
 
 3. Which top factors might decrease the estimated value of a home, for the buyer or the seller,
 and by what amount?
 
-***
+
 The top three factors that would decrease value of a home:
 
 *1. Renovated
@@ -100,9 +101,13 @@ The top three factors that would decrease value of a home:
 *2. Waterfront
 
 *3. Square Foot Living 15
-***
+
+
+
 
 ***
+
+
 Questions to consider:
 
 * What would you recommend the business do as a result of this work?
@@ -113,6 +118,8 @@ Questions to consider:
 
 * What else could you do in the future to improve this project?
 ** The use of an expanded dataset with more home features or our various datasets included from the surrounding cites and counties
+
+
 ***
 
 ## For More Information
