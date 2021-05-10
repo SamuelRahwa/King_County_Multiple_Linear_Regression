@@ -47,11 +47,11 @@ From the King County House Sales dataset, I used the following features:
 * Data Exploration
 * Data Cleaning
 * Creating a subset dataframe to answer business questions
-** Logging continuous variables
-** Scaling non-continuous features
+    - Logging continuous variables
+    - Scaling non-continuous features
 * Using statsmodels to run our Multiple  Linear Regression
-** Checking the assumptions of our linear regression
-** Creating Visualizations to confirm if the mathematically tests are in line with the "eye test"
+    - Checking the assumptions of our linear regression
+    - Creating Visualizations to confirm if the mathematically tests are in line with the "eye test"
 
 
 ## Results
