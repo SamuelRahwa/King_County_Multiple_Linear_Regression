@@ -1,16 +1,17 @@
 # Which factors influence a home’s sales price?
 
 **Author**: Samuel Rahwa
+
 May 5, 2021
 
 ## Overview
 
-I have tasked to work for RE/MAX, a real estate agency that helps homeowners buy and/or sell homes. I need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+I have been tasked to work for RE/MAX, a real estate agency that helps homeowners buy and/or sell homes. I need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
 
 
 ## Business Problem
 
-You can assert some control over the value of your home with diligent upkeep and selective home updates. At the same time, dozens of factors large and small impact the state of housing as a whole and how real estate performs on a local level. 
+You can assert some control over the value of your home with diligent upkeep and selective home updates. At the same time, dozens of factors large and small impact the state of housing as a whole and how real estate performs on a local level.
 
 ***
 Questions to consider:
@@ -31,9 +32,9 @@ From the King County House Sales dataset, I used the following features:
 * bedrooms
 * bathrooms
 * floors
-* waterfront 
+* waterfront
 * view
-* condition 
+* condition
 * grade
 * age
 * year_sold
@@ -45,11 +46,11 @@ From the King County House Sales dataset, I used the following features:
 * Data Exploration
 * Data Cleaning
 * Creating a subset dataframe to answer business questions
-** Logging continous variables
-** Scaling non-continous features
-* Using statsmodels to run our Mutilple Linear Regression
+** Logging continuous variables
+** Scaling non-continuous features
+* Using statsmodels to run our Multiple  Linear Regression
 ** Checking the assumptions of our linear regression
-** Creating Visualizations to confirm if the mathetically tests are in line with the "eye test"
+** Creating Visualizations to confirm if the mathematically tests are in line with the "eye test"
 
 
 ## Results
@@ -59,11 +60,11 @@ Our final model had an r-squared of 0.597. This model did not violate the linear
 However, the Q-Q Plot shows the points falling along a straight line, which provide strong evidence that these numbers truly did come from a normal distribution. Finally, the residual scatter plot appears to meet homoscedasticity assumption since the scores appear to be concentrated in the center (about the 0 point) and distributed in a rough rectangularly pattern.
 
 ### Q-Q Plot
-![graph1](./images/viz1.png)
+![graph1](https://github.com/SamuelRahwa/My-First-Linear-Regression/blob/main/images/Q-Q%20Plot.png)
 
 
 ### Residual Scatter Plot
-![graph2](./images/viz1.png)
+![graph2](https://github.com/SamuelRahwa/My-First-Linear-Regression/blob/main/images/Residual%20Scatter%20Plot.png)
 
 
 ## Conclusions
@@ -74,8 +75,8 @@ However, the Q-Q Plot shows the points falling along a straight line, which prov
   house sales, from a northwestern county. This indicates that these factors truly are
   explanatory. More analysis is required to understand how much additional explanatory
   power would be provided by incorporating features with less multicollinearity.
-  
-  
+
+
 2. Which top factors might increase the estimated value of a home, for the buyer or the seller, and by what amount?
 
 ***
@@ -87,8 +88,8 @@ The three factors that would increase value of a home:
 
 *3. Grade
 ***
-      
-3. Which top factors might decrease the estimated value of a home, for the buyer or the seller, 
+
+3. Which top factors might decrease the estimated value of a home, for the buyer or the seller,
 and by what amount?
 
 ***
@@ -105,10 +106,10 @@ The top three factors that would decrease value of a home:
 Questions to consider:
 
 * What would you recommend the business do as a result of this work?
-** We can advise homeowner's who are looking to sell for the highest price possible, to increase the square footage of their home, make sure the county gives you the highest grade rating possible (when they come to evaluate), and compare the square footage of your home against your nearest 15 neighbors. 
+** We can advise homeowner's who are looking to sell for the highest price possible, to increase the square footage of their home, make sure the county gives you the highest grade rating possible (when they come to evaluate), and compare the square footage of your home against your nearest 15 neighbors.
 
 * What are some reasons why your analysis might not fully solve the business problem?
-** Multicollinearity was a problem because it undermines the statistical significance of an independent variable(Price). Other things being equal, the larger the standard error of a regression coefficient, the less likely it is that this coefficient will be statistically significant.
+** Multicollinearity was a problem because it undermines the statistical significance of an independent variable (Price). Other things being equal, the larger the standard error of a regression coefficient, the less likely it is that this coefficient will be statistically significant.
 
 * What else could you do in the future to improve this project?
 ** The use of an expanded dataset with more home features or our various datasets included from the surrounding cites and counties
@@ -116,7 +117,7 @@ Questions to consider:
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](https://github.com/SamuelRahwa/My-First-Linear-Regression/blob/main/Multiple_Linear_Regression.ipynb) or our [presentation](https://github.com/SamuelRahwa/My-First-Linear-Regression/blob/main/Home_Pricing_Factors_Presentation.pdf).
 
 For any additional questions, please contact **Samuel Rahwa at samuelaaronrahwa@gmail.com**
 
