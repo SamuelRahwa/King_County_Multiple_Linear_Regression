@@ -16,7 +16,7 @@ You can assert some control over the value of your home with diligent upkeep and
 
 ***
 Questions to consider:
-* Does various predicting factors which have been chosen initially really affect the home prices?
+* Do various predicting factors which have been chosen initially really affect the home prices?
 * Which top factors might increase the estimated value of a home, for the buyer or the seller, and by what amount?
 * Which top factors might decrease the estimated value of a home, for the buyer or the seller, and by what amount?*
 ***
@@ -70,7 +70,7 @@ However, the Q-Q Plot shows the points falling along a straight line, which prov
 
 ## Conclusions
 
-**1. Does various predicting factors which have been chosen initially really affect the home prices?**
+**1. Do the various predicting factors which have been chosen initially really affect the home prices?**
 
 > With 14 features we are able to explain about 60% of the variance in home prices in house sales, from a northwestern county. This indicates that these factors truly are explanatory. More analysis is required to understand how much additional explanatory power would be provided by incorporating features with less multicollinearity.
 
@@ -111,11 +111,11 @@ Questions to consider:
 
 **What are some reasons why your analysis might not fully solve the business problem?**
 
-> Multicollinearity was a problem because it undermines the statistical significance of an independent variable (Price). Other things being equal, the larger the standard error of a regression coefficient, the less likely it is that this coefficient will be statistically significant.
+> Multicollinearity was a problem because it undermines the statistical significance of Price. 
 
 **What else could you do in the future to improve this project?**
 
-> The use of an expanded dataset with more home features or our various datasets included from the surrounding cites and counties
+> The use of an expanded dataset with more home features/engineered or our various datasets included from the surrounding counties.
 
 ***
 
