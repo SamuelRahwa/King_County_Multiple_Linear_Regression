@@ -132,7 +132,7 @@ Next Steps:
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](https://github.com/SamuelRahwa/My-First-Linear-Regression/blob/main/Multiple_Linear_Regression.ipynb) or our [presentation](https://github.com/SamuelRahwa/My-First-Linear-Regression/blob/main/Home_Pricing_Factors_Presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](https://github.com/SamuelRahwa/King_County_Multiple_Linear_Regression/blob/main/King_County_Housing_Pricing_Multiple_Linear_Regression.ipynb) or our [presentation](https://github.com/SamuelRahwa/King_County_Multiple_Linear_Regression/blob/main/King_County_Housing_Pricing_Factors_Presentation.pdf).
 
 For any additional questions, please contact **Samuel Rahwa at samuelaaronrahwa@gmail.com**
 
