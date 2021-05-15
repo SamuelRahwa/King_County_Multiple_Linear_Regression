@@ -46,19 +46,25 @@ From the King County House Sales dataset, I used the following features:
 
 * Data Exploration
 * Data Cleaning
-* Creating a subset dataframe to answer business questions
-    - Logging continuous variables
-    - Scaling non-continuous features
-* Using statsmodels to run our Multiple  Linear Regression
-    - Checking the assumptions of our linear regression
-    - Creating Visualizations to confirm if the mathematically tests are in line with the "eye test"
+* Feature Engineering
+    - Replacing Missing or NAN values
+    - Selected columns 
+* Using statsmodels to run our Multiple Linear Regression
+    - Logging and Scaling features
+* Checking the assumptions of our linear regression
+* Creating Visualizations to confirm if the statistically tests are in line with the "eye test"
+
 
 
 ## Results
 
-Our final model had an r-squared of 0.597. This model did not violate the linearity assumption (p = 0.8494), but it did violate the normality (p < 0.001) and homoscedasticity (p < 0.001) assumptions. Based on the variance inflaction factor metric, it did not violate the independence assumption.
+This model had 14 input features: Sqft_living_log, Sqft_lot15_log, Sqft_living15_log, Bedrooms_scaled, Bathrooms_scaled , Floors_scaled, Waterfront_scaled, View_scaled, Condition_scaled, Grade_scaled, Age_scaled, Year_sold_scaled, Renovated_scaled and Month_sold_scaled.
 
-However, the Q-Q Plot shows the points falling along a straight line, which provide strong evidence that these numbers truly did come from a normal distribution. Finally, the residual scatter plot appears to meet homoscedasticity assumption since the scores appear to be concentrated in the center (about the 0 point) and distributed in a rough rectangularly pattern.
+It had an r-squared of 0.606. This model did not violate the linearity assumption (p = 0.5559), but it did violate the normality (p < 0.001) and homoscedasticity (p < 0.001) assumptions. Based on the variance inflaction factor metric, it did not violate the independence assumption for 13 of the features.
+
+However, the Q-Q Plot shows the points falling along a straight line, which provide strong evidence that these numbers truly did come from a normal distribution.
+
+Finally, the residual scatter plot appears to meet homoscedasticity assumption since the scores appear to be concentrated in the center (about the 0 point) and distributed in a rough rectangularly pattern
 
 ### Q-Q Plot
 ![graph1](https://github.com/SamuelRahwa/My-First-Linear-Regression/blob/main/images/Q-Q%20Plot.png)
@@ -72,7 +78,11 @@ However, the Q-Q Plot shows the points falling along a straight line, which prov
 
 **1. Do the various predicting factors which have been chosen initially really affect the home prices?**
 
-> With 14 features we are able to explain about 60% of the variance in home prices in house sales, from a northwestern county. This indicates that these factors truly are explanatory. More analysis is required to understand how much additional explanatory power would be provided by incorporating features with less multicollinearity.
+> We are able to account for about 60% of the variance within the King County House Sales dataset by using the 14 columns mentioned previously
+
+> This model finds a significant relationship existed between Home Prices and the 14 features
+
+> We have strong visually strong evidence that the model’s findings are reliable
 
 
 **2. Which top factors might increase the estimated value of a home, for the buyer or the seller, and by what amount?**
@@ -80,11 +90,11 @@ However, the Q-Q Plot shows the points falling along a straight line, which prov
 
 > The three factors that would increase value of a home:
 
->> 1. Square Foot Living
+>> 1.) For each additional 1% increase in the square footage of interior housing living space for the nearest 15 neighbors, we expect a home's price to increase by a percentage change of 0.3248.
 
->> 2. Square Foot Living 15
+>> 2.) For each additional 1% increase in footage of the home's, we expect a home's price to increase by a percentage change of 0.3112. 
 
->> 3. Grade
+>> 3.) For each additional 1% percent increase in the standard deviation of the overall grade given to the  housing unit, we expect a home's price to increase by a percentage change of 0.2389
 
 
 **3. Which top factors might decrease the estimated value of a home, for the buyer or the seller,
@@ -93,29 +103,30 @@ and by what amount?**
 
 >The top three factors that would decrease value of a home:
 
->> 1. Renovated
+>> 1.) For each additional 1% percent increase in the standard deviation of renovation, we expect a home's price to decrease by a percentage change of -2.4270.   
 
->> 2. Waterfront
+>> 2.) For each additional 1% increase in square footage of the land lots of the nearest 15 neighbors,  we expect a home's price to decrease by a percentage change of -0.0949.  
 
->> 3. Square Foot Living 15
 
+>> 3.) For each additional 1% percent increase in the standard deviation for bedrooms, we expect a home's price to decrease by a percentage change of -0.0337.
 
 
 
 ***
-Questions to consider:
+Next Steps: I can see for this Project
 
-**What would you recommend the business do as a result of this work?**
+**Are there data points we don’t have, that could be included and meaningful for RE/MAX?**
 
-> We can advise homeowner's who are looking to sell for the highest price possible, to increase the square footage of their home, make sure the county gives you the highest grade rating possible (when they come to evaluate), and compare the square footage of your home against your nearest 15 neighbors.
-
-**What are some reasons why your analysis might not fully solve the business problem?**
-
-> Multicollinearity was a problem because it undermines the statistical significance of Price. 
-
-**What else could you do in the future to improve this project?**
-
-> The use of an expanded dataset with more home features/engineered or our various datasets included from the surrounding counties.
+> We could look at including additional data from King County’s:
+>> Schools Districts
+>> Economic Activity
+>> Population Demographics 
+>> Occupational Employment
+>> Number of Households
+>> Median and Average Income
+>> Education Statistics
+>> Marital Status
+>> Environmental, Social and Corporate Governance
 
 ***
 
