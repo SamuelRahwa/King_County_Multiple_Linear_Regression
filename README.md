@@ -46,9 +46,9 @@ From the King County House Sales dataset, I used the following features:
 
 * Data Exploration
 * Data Cleaning
-* Feature Engineering
+    - Feature Engineering
     - Replacing Missing or NAN values
-    - Selected columns 
+* Selected columns 
 * Using statsmodels to run our Multiple Linear Regression
     - Logging and Scaling features
 * Checking the assumptions of our linear regression
@@ -113,7 +113,7 @@ and by what amount?**
 
 
 ***
-Next Steps: I can see for this Project
+Next Steps: 
 
 **Are there data points we don’t have, that could be included and meaningful for RE/MAX?**
 
