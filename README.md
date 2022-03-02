@@ -118,14 +118,23 @@ Next Steps:
 **Are there data points we don’t have, that could be included and meaningful for RE/MAX?**
 
 > We could look at including additional data from King County’s:
+
 >> Schools Districts
+
 >> Economic Activity
+
 >> Population Demographics 
+
 >> Occupational Employment
+
 >> Number of Households
+
 >> Median and Average Income
+
 >> Education Statistics
+
 >> Marital Status
+
 >> Environmental, Social and Corporate Governance
 
 ***
